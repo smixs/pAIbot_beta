@@ -1,0 +1,57 @@
+Technical Specification for Telegram Bot Development
+Project Overview
+We are developing a Telegram bot that integrates with various AI models to enable interactive communication and multimedia processing. The bot will connect to OpenAI and Anthropic APIs, allowing users to interact with language models, transcribe audio messages, generate images, and recognize images using Vision capabilities.
+
+Main Features and Requirements
+Bot Functionality Overview
+
+The bot should allow users to communicate with different AI models directly within Telegram.
+It must accept audio messages and transcribe them into text using OpenAI Whisper.
+The bot should support image generation through DALL-E 3 and image recognition capabilities.
+API Integrations
+
+OpenAI API:
+For text-based communication using ChatGPT models.
+For audio transcription using Whisper.
+For image generation with DALL-E 3.
+For Vision tasks (image recognition).
+Anthropic API:
+To enable communication with Claude models (e.g., claude-3-5-sonnet-20240620, claude-3-opus-20240229).
+Model Selection Menu
+
+The bot must include a user-friendly menu for selecting the model they wish to communicate with:
+claude-3-5-sonnet-20240620
+claude-3-opus-20240229
+chatgpt-4o-latest
+gpt-4o-mini
+Allow switching to image generation mode (DALL-E 3).
+Multimodal Support
+
+The bot must support multimodal inputs, including text, audio, and images.
+Ensure Vision capabilities for image recognition are integrated and functional.
+User Interface
+
+A simple and intuitive user interface within Telegram.
+Menu buttons for easy navigation and selection of models and modes.
+Audio Transcription
+
+When a user sends an audio message, it should be automatically transcribed to text using OpenAI Whisper and displayed back to the user.
+Image Generation and Recognition
+
+Users should be able to generate images based on text prompts using DALL-E 3.
+The bot should recognize and describe images sent by the user.
+Technical Requirements
+Programming Language: Python (preferred for compatibility with Telegram Bot API and OpenAI/Anthropic integrations).
+Frameworks and Libraries:
+python-telegram-bot for Telegram Bot API integration.
+OpenAI SDK for API integration.
+Anthropic SDK for Claude model integration.
+Additional libraries for handling multimedia (e.g., PIL for image processing).
+Security and Privacy:
+Secure API key management for OpenAI and Anthropic integrations.
+Ensure user data, especially audio and image inputs, are handled securely and comply with privacy standards.
+Expected Deliverables
+A fully functional Telegram bot with the specified features.
+Clean and documented source code with setup instructions.
+Deployment instructions for hosting the bot on a server (optional: Docker configuration).
+Brief user guide on how to interact with the bot and switch between different modes and models.
